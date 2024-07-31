@@ -1,0 +1,38 @@
+{
+    "version": "1.0.5",
+    "name": "gameboy Emul",
+    "description": "Gameboy Emulator For KaiOS 2.5.x. Play *.gb, *.gbc Games",
+    "launch_path": "/index.html",
+    "icons": {
+        "56": "/icons/ic-56.png",
+        "112": "/icons/ic-112.png",
+        "128": "/icons/ic-128.png"
+    },
+    "fullscreen": "true",
+    "developer": {
+        "name": "Shifat100",
+        "url": "http://shifat100.xtgem.com"
+    },
+    "permissions": {
+        "device-storage:sdcard": {
+            "access": "readwrite"
+        },
+        "device-storage:sdcard1": {
+            "access": "readwrite"
+        },
+        "spatialnavigation-app-manage": {}
+    },
+    "dependencies": {
+		"ads-sdk": "1.5.8"
+	},
+    "locales": {
+        "en-US": {
+            "name": "Gameboy Emul",
+            "subtitle": "Download And Enjoy",
+            "description": "Gameboy Emulator For KaiOS 2.5.x. Play *.gb, *.gbc Games"
+        }
+    },
+    "default_locale": "en-US",
+    "cursor": "false",
+    "type": "privileged"
+}

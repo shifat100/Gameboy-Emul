@@ -1,0 +1,57 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css" />
+  <script type="text/javascript" src="js/GameBoyCore.js"></script>
+  <script type="text/javascript" src="js/GameBoyIO.js"></script>
+  <script type="text/javascript" src="js/other/XAudioServer.js" />
+  </script>
+  <script type="text/javascript" src="js/other/swfobject.js" />
+  </script>
+  <script type="text/javascript" src="js/other/resampler.js" />
+  </script>
+
+
+</head>
+
+<body>
+  <input type="file" id="importsavedata" style="display: none;">
+  <div class="blur" id="blur">
+    <div id="header" class="header"
+      style="position: fixed; top: 0px;left: 0px;background: #8a8a8a;color: white;z-index: 1;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;padding: 5px 10px;">
+    </div>
+    <!-div id="subheader" style="width: 100%; position: fixed; top: 28px;left: 0px;background: #cccccc;color: #000000;z-index: 1;overflow: hidden;font-size: 10px;"><table width="100%" style="font-size: 10px; font-weight: bold;"><tr><td></td><td></td><td></td><td id="emulspeed">1x</td></tr></table></div-->
+      <div
+        style="display: flex;justify-content: center; align-items: center;width: 100%; height: 100%; position: fixed;top: 0px; left: 0px;background-color: black;">
+        <canvas id="mainCanvas" style="width: 240px;height: 216px;"></canvas>
+      </div>
+      <div class="footer" id="footer"
+        style="position: fixed; bottom: 0px;left: 0px;background: #8a8a8a;color: #ffffff;">
+        <div class="footerelement"></div>
+        <div class="footerelement"><span style="color: yellow">1.00x</span></div>
+        <div class="footerelement" style="color: rgb(255, 255, 255);">Back</div>
+      </div>
+  </div>
+  <div class="header">GameBoy Rom List</div>
+  <div id="nofilenotice">
+    <center>
+      <br><br><br>
+      <h2>No Rom File Found</h2>
+    </center>
+    <ul>
+      <li><small>Please Download <b>*.gb, *.gbc</b> Rom.</small></li>
+    </ul>
+  </div>
+  <div id="app" class="content">
+    <!--input type="file" onchange="machine(this.files[0])"-->
+  </div>
+  <div class="footer"><span class="footerelement">Help</span><span class="footerelement">OK</span><span
+      class="footerelement">Exit</span></div>
+  <script src="https://static.kaiads.com/ads-sdk/ads-sdk.v5.min.js"></script>
+  <script src="kaiads.v5.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
